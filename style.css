@@ -1,0 +1,38 @@
+body{
+    height : 100vh;
+    background-color :black;
+    margin : 0px;
+    padding : 0px;
+    overflow:hidden;
+
+}
+
+span{
+    background : url("https://cdn1.iconfinder.com/data/icons/cute-emoji-smiles-with-gradient/83/In_Love_Emoji_Emoticon_Feeling_Face_Smile-512.png");
+    /* width : 100px;
+    height : 100px; */
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    background-size : cover;
+    /* transform : translate(-50%,-50%); */
+    pointer-events :none;
+    animation : animate 1s linear;
+
+
+}
+
+@keyframes animate {
+    0%{
+        opacity : 0;
+        transform : translate(-50%,-50%);
+        filter : hue-rotate(0);
+
+    }
+
+    100%{
+        opacity : 1;
+        transform : translate(-50%,-1000%);
+        filter : hue-rotate(720deg);
+    }
+}
